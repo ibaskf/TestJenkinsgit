@@ -9,6 +9,9 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Player {
+	
+	
+	
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,6 +30,29 @@ public class Player {
 
 	@ManyToOne
 	private Team team;
+	
+	
+	
+
+	public Player(Integer id, String firstName, String lastName, String nickName, int tshirtNumber, Team team) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.nickName = nickName;
+		this.tshirtNumber = tshirtNumber;
+		this.team = team;
+	}
+
+	
+	
+
+	public Player() {
+
+	}
+
+
+
 
 	public Integer getId() {
 		return id;
