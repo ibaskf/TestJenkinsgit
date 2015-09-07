@@ -5,8 +5,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class Playertest {
+public class PlayerTest {
 
+	
 //	 PlayerService playerservice=new PlayerService();
 	 
 	// Player player =new Player();
